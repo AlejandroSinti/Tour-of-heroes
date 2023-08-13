@@ -1,0 +1,25 @@
+.id{
+    color: blue;
+    font-family:'Times New Roman';
+    font-weight: bold;
+}
+.name{
+    font-family:'Times New Roman';
+    color: blue;
+    font-weight: bold;
+}
+.descripcion{
+    font-family:'Times New Roman';
+    color: blue;
+    font-weight: bold
+}
+.medida{
+    font-family:'Times New Roman';
+    color: blue;
+    font-weight: bold
+}
+.peso{
+    font-family:'Times New Roman';
+    color: blue;
+    font-weight: bold
+}
