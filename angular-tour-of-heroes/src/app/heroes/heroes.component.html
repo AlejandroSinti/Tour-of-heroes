@@ -1,10 +1,49 @@
-<h2>{{hero.name| uppercase}} Details</h2> 
-<div><span class="id">Id:</span>{{hero.id}}</div>
-<div><span class="name">Name:</span>{{hero.name}}</div>
-<div><span class="descripcion">Descripcion:</span>{{hero.descripcion}}</div>
-<div><span class="medida">Medida:</span>{{hero.medida}}</div>
-<div><span class="peso">Peso:</span>{{hero.peso}}</div>
-<div>
-    <label for = 'name'> Hero name: </label>
-    <input id = 'name' [(ngModel)]= "hero.name" placeholder="name">
-</div>
+
+<h2>My Heroes</h2>
+    <ul class ="lista-heroes" >
+    <li *ngFor = "let hero of heroes">
+        <button class="button" >
+            <span class='badge'>{{hero.id}}</span>
+            <span class="name">{{hero.name}}</span>
+        </button>
+    </li>
+    
+<table class="table table-striped">
+    <thead >
+      <tr >
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Medida</th>
+        <th scope="col">Peso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let hero of heroes" >
+        <th>{{hero.id}}</th>
+        <td>{{hero.name}}</td>
+        <td>{{hero.descripcion}}</td>
+        <td>{{hero.medida}}</td>
+        <td>{{hero.peso}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+<div class="wrap">
+  <div *ngFor = "let hero of heroes" class="hero-card">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div class="hero name">
+          <img src="" alt="{{hero.name}}">
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <span class='hero'>{{hero.id}}</span>
+        <span class='name'>{{hero.name}}</span>
+        <span class='descripcion'>{{hero.descripcion}}</span>
+        <a class="btn btn-primary">Regresar</a>
+      </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+

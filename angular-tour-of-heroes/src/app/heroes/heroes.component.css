@@ -10,8 +10,9 @@
 }
 .descripcion{
     font-family:'Times New Roman';
-    color: blue;
+    color: rgb(0, 0, 0);
     font-weight: bold
+    
 }
 .medida{
     font-family:'Times New Roman';
@@ -22,4 +23,40 @@
     font-family:'Times New Roman';
     color: blue;
     font-weight: bold
+}
+.lista-heroes li{
+    display: inline;
+    padding: 10px;
+}
+.lista-heroes{
+    padding: 10px;
+    margin: 10px;
+}
+.badge{
+    border: 1rem rgb(10, 10, 10);
+    background-color: aquamarine;
+}
+.button{
+    border: 5rem rgb(10, 10, 10);
+    background-color: rgb(48, 153, 118);
+}
+
+.example-card{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    max-width: 300px;
+    margin-left: 100px;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    }
+.wrap{
+        display: flex;
+        margin: auto /center
+}
+.descripcion{
+    display: flex;
 }
