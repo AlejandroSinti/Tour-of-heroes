@@ -29,21 +29,22 @@
     </tbody>
   </table>
 
-<div class="wrap">
-  <div *ngFor = "let hero of heroes" class="hero-card">
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div class="hero name">
-          <img src="" alt="{{hero.name}}">
-        </div>
-      </mat-card-header>
-      <mat-card-content>
-        <span class='hero'>{{hero.id}}</span>
-        <span class='name'>{{hero.name}}</span>
-        <span class='descripcion'>{{hero.descripcion}}</span>
-        <a class="btn btn-primary">Regresar</a>
-      </mat-card-content>
-      </mat-card>
+<div class="container text-center">
+  <div class = "row">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3"  *ngFor = "let hero of heroes" >
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div class="hero name">
+            <img src="" alt="{{hero.name}}">
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <span class='hero'>{{hero.id}}</span>
+          <span class='name'>{{hero.name}}</span>
+          <span class='descripcion'>{{hero.descripcion}}</span>
+          <a class="btn btn-primary">Regresar</a>
+        </mat-card-content>
+        </mat-card>
     </div>
   </div>
-
+</div>

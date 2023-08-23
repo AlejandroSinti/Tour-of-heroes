@@ -48,15 +48,13 @@
     height: 200px;
     width: 400px;
     max-width: 300px;
-    margin-left: 100px;
+    margin: 25px;
     background-color: lightgrey;
     color: black;
     text-align: center;
     }
-.wrap{
-        display: flex;
-        margin: auto /center
-}
+
 .descripcion{
     display: flex;
 }
+
