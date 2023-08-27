@@ -1,8 +1,12 @@
 
+
 <h2>My Heroes</h2>
     <ul class ="lista-heroes" >
     <li *ngFor = "let hero of heroes">
-        <button class="button" >
+        <button type="button" (click)="onSelected(hero)" class="button"[ngClass]="buttonClass"
+        (mouseenter)="changeButtonClass('mouseenter')"
+        (mouseleave)="changeButtonClass('mouseleave')"
+        (mousewheel)="changeButtonClass('mousewheel')" >
             <span class='badge'>{{hero.id}}</span>
             <span class="name">{{hero.name}}</span>
         </button>
@@ -42,7 +46,11 @@
           <span class='hero'>{{hero.id}}</span>
           <span class='name'>{{hero.name}}</span>
           <span class='descripcion'>{{hero.descripcion}}</span>
-          <a class="btn btn-primary">Regresar</a>
+          <a class="btn"[ngClass]="buttonClass"
+          (mouseenter)="changeButtonClass('mouseenter')"
+          (mouseleave)="changeButtonClass('mouseleave')"
+          (mousewheel)="changeButtonClass('mousewheel')"
+          >Regresar</a>
         </mat-card-content>
         </mat-card>
     </div>

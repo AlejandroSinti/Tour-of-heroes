@@ -5,11 +5,15 @@ import { MatCardModule } from "@angular/material/card";
 
 import { AppComponent } from './app.component';
 import { HeroesComponent} from './heroes/heroes.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
+    NavbarComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,2 +1,17 @@
-<h1 class="titulo">{{title}}</h1>
-<app-heroes></app-heroes>
+<div class="container-fluid">
+  <div class="row">
+  <app-navbar><h1 class="titulo">{{title}}</h1></app-navbar>
+  </div>
+</div>
+<div class="row">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-auto">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="col">
+        <app-heroes></app-heroes>
+    </div>
+    </div>
+  </div>
+</div>

@@ -8,4 +8,26 @@ import { HEROES } from '../mock-heroes';
 })
 export class HeroesComponent {
   heroes = HEROES;
- }
+
+buttonClass:string = "btn-primary"
+  changeButtonClass(eventName:string){
+    console.log("Evento de mouse" ,{eventName})
+    if(eventName === 'mouseenter'){
+      this.buttonClass= "btn-danger"
+    }
+    if(eventName === 'mouseleave'){
+      this.buttonClass= "btn-primary"
+    }
+    if(eventName === 'mousewheel'){
+      this.buttonClass= "btn-warning"
+    }
+  }
+
+selectedHero?:Hero;
+onSelected(hero:Hero): void{
+  this.selectedHero=hero;
+  console.log("Selected hero:",hero);
+  
+}
+}
+
